@@ -85,6 +85,7 @@
     </nav>
     <!--Banner-->
     <div class="py-8 md:py-12 lg:py-16 px-4 lg:px-0">
+      <!--banner img-->
       <div class="flex justify-center ">
         <img src="./assets/banner.png" alt="Banner Image h-full">
       </div>
@@ -242,8 +243,8 @@
               captivates with its
               blend of rustic
               charm and modern .</p>
-            <a class="text-xl rounded-full  pr-0 w-52">View Details <i
-                class="fa-solid fa-arrow-up-long text-2xl bg-green text-black h-9 w-9 rounded-full rotate-45"></i></a>
+            <a class="btn rounded-full text-xl pr-2 max-w-fit bg-transparent">View Details<i
+                class="fa-solid fa-arrow-up-long text-3xl bg-green text-white h-10 w-10 rounded-full rotate-45"></i></a>
           </div>
         </div>
         <!--item 2-->
@@ -266,8 +267,8 @@
               captivates with its
               blend of rustic
               charm and modern .</p>
-            <a class="text-xl rounded-full  pr-0 w-52">View Details <i
-                class="fa-solid fa-arrow-up-long text-2xl bg-green text-black h-9 w-9 rounded-full rotate-45"></i></a>
+            <a class="btn rounded-full text-xl pr-2 max-w-fit bg-transparent">View Details<i
+                class="fa-solid fa-arrow-up-long text-3xl bg-green text-white h-10 w-10 rounded-full rotate-45"></i></a>
           </div>
         </div>
         <!--item 5-->
@@ -284,34 +285,35 @@
 
     <!--Lets Contact section-->
     <section class="py-20" style="background-image: url(./assets/bg.jpg);">
-      <div class="container mx-auto">
+      <div class="container mx-auto px-4 md:px-2">
         <!--heading text-->
-        <div class="">
-          <div class="flex flex-col items-center">
-            <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
-                class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> Let’s Connect</h5>
-            <h1 class="text-4xl lg:text-5xl font-semibold py-4">Let’s Discuss Next Project</h1>
-            <p class="font-medium text-lg leading-6 text-center">The barn house captivates with its blend of rustic
-              charm
-              and modern sophistication, featuring weathered wood, sleek
-              metal accents.</p>
-          </div>
-          <div></div>
+        <div class="flex flex-col items-center justify-center">
+          <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
+              class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> Let’s Connect</h5>
+          <h1 class="text-4xl lg:text-5xl font-semibold py-4">Let’s Discuss Next Project</h1>
+          <p class="font-medium text-lg leading-6 text-center">The barn house captivates with its blend of rustic
+            charm
+            and modern sophistication, featuring weathered wood, sleek
+            metal accents.</p>
         </div>
         <!--contact from-->
-        <div class="p-8 gap-6 grid items-center justify-center grid-cols-1 md:grid-cols-2">
+        <div class="py-8 lg:px-20 gap-6 grid items-center justify-center grid-cols-1 md:grid-cols-2">
           <div>
-            <input type="text" placeholder="First Name*" class="input input-lg input-bordered w-full rounded-full" />
+            <input type="text" placeholder="First Name*"
+              class="input input-lg input-bordered w-full rounded-full h-12 md:h-14" />
           </div>
 
           <div>
-            <input type="text" placeholder="Last Name*" class="input input-bordered w-full rounded-full input-lg" />
+            <input type="text" placeholder="Last Name*"
+              class="input input-bordered w-full rounded-full input-lg h-12 md:h-14" />
           </div>
           <div>
-            <input type="number" placeholder="Your Number*" class="input input-bordered w-full rounded-full input-lg" />
+            <input type="number" placeholder="Your Number*"
+              class="input input-bordered w-full rounded-full input-lg h-12 md:h-14" />
           </div>
           <div>
-            <input type="text" placeholder="Your Email*" class="input input-bordered w-full rounded-full input-lg" />
+            <input type="text" placeholder="Your Email*"
+              class="input input-bordered w-full rounded-full input-lg h-12 md:h-14" />
           </div>
 
           <div class="md:col-span-2 ">
@@ -322,11 +324,63 @@
           </div>
         </div>
       </div>
-
-
-
     </section>
   </main>
+
+  <!--footer section-->
+  <footer class="bg-black">
+    <div class="container mx-auto px-2 lg:px-4 py-20 space-y-12 flex flex-col">
+      <!--logo & text-->
+      <div class="space-y-8 flex flex-col items-center">
+        <a class="btn btn-ghost text-4xl text-white"><i
+            class="fa-solid fa-arrow-up-long text-3xl bg-green h-10 w-10 rounded-full text-slate-800 rotate-45"></i>Rinterio</a>
+        <h5 class="text-white text-lg lg:text-xl leading-6 text-center ">The barn house captivates with its
+          blend of
+          rustic charm
+          and modern
+          sophistication,<br>
+          featuring weathered
+          wood, sleek
+          metal accents.</h5>
+      </div>
+      <!--Nav-->
+      <ul class="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12  lg:gap-24">
+        <li class="text-white text-2xl hover:text-fuchsia-500 cursor-pointer visited:text-green-500">
+          Home
+        </li>
+        <li class="text-white text-2xl hover:text-fuchsia-500 cursor-pointer visited:text-green-500">
+          Services
+        </li>
+        <li class="text-white text-2xl hover:text-fuchsia-500 cursor-pointer visited:text-green-500">
+          Portfolio
+        </li>
+        <li class="text-white text-2xl hover:text-fuchsia-500 cursor-pointer visited:text-green-500">
+          Blogs
+        </li>
+        <li class="text-white text-2xl hover:text-fuchsia-500 cursor-pointer visited:text-green-500">
+          Contact Us
+        </li>
+      </ul>
+      <!--book consult Button-->
+      <a class="btn rounded-full bg-green text-xl pr-2 w-full md:w-52 self-center">Book
+        Consult<i
+          class="fa-solid fa-arrow-up-long text-3xl bg-black text-white h-10 w-10 rounded-full rotate-45"></i></a>
+    </div>
+
+    <!--Personal information-->
+    <div class="border-t-4 border-fuchsia-500 flex flex-col items-center pb-12">
+      <h5 class="text-white font-semibold text-xl md:text-2xl pt-6">
+        <.Assignment(3rd) By <span>&copy;</span>Prince Mahmud Piyas/>
+      </h5>
+      <!--social icon-->
+      <div class="flex gap-6 text-2xl text-white py-2">
+        <a class=""><i class="fa-brands fa-facebook hover:text-fuchsia-500"></i></a>
+        <a><i class="fa-brands fa-github hover:text-fuchsia-500"></i></a>
+        <a><i class="fa-brands fa-linkedin hover:text-fuchsia-500"></i></a>
+        <a><i class="fa-brands fa-twitter hover:text-fuchsia-500"></i></a>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
