@@ -84,7 +84,7 @@
       </div>
     </nav>
     <!--Banner-->
-    <div class="py-8 md:py-12 lg:py-16 px-4">
+    <div class="py-8 md:py-12 lg:py-16 px-4 lg:px-0">
       <div class="flex justify-center ">
         <img src="./assets/banner.png" alt="Banner Image h-full">
       </div>
@@ -107,7 +107,7 @@
   <!--Main Section-->
   <main class="space-y-8 md:space-y-16 lg:space-y-20 mb-16 ">
     <!--We Design Section-->
-    <section class="bg-slate-100 py-8 lg:py-16 px-4">
+    <section class="bg-slate-200 py-8 lg:py-16 px-4 lg:px-0">
       <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12">
         <!--text content-->
         <div class="space-y-4 lg:space-y-8 lg:w-3/6 relative h-full">
@@ -150,7 +150,7 @@
     </section>
 
     <!--Our Work Process-->
-    <section class="bg-slate-100 py-12 px-4">
+    <section class="bg-slate-200 py-12 px-4 lg:px-0">
       <div class="container mx-auto relative">
         <!--Client Review-->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white p-8 gap-8 rounded-xl">
@@ -213,7 +213,7 @@
     </section>
 
     <!--Latest Portfolio-->
-    <section class="container mx-auto space-y-8 lg:space-y-12 px-4">
+    <section class="container mx-auto space-y-8 lg:space-y-12 px-2 md:px-4 lg:px-0">
       <!--heading text-->
       <div class="flex flex-col items-center">
         <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
@@ -231,11 +231,13 @@
       <!--Portfolio grid-->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-6">
         <!--item 1-->
-        <div class="flex gap-4 p-6 border-2 rounded-xl md:col-span-2 lg:col-span-8 h-custom lg:h-custom-lg bg-gray-50">
-          <img src="./assets/img1.png" alt="Img 1" class="w-3/6">
+        <div
+          class="flex flex-col md:flex-row gap-4 p-6 border-2 rounded-xl md:col-span-2 lg:col-span-8 min-h-min overflow-hidden lg:h-custom-lg bg-blue-50">
+          <img src="./assets/img1.png" alt="Img 1" class="w-full h-[240px] md:h-auto md:w-3/6">
           <div class="flex flex-col gap-2 justify-center">
             <h2 class="text-2xl font-semibold">Commercial</h2>
-            <p class="text-lg leading-6">The barn house captivates with its blend of rustic charm and modern. The barn
+            <p class="text-lg leading-6 text-e">The barn house captivates with its blend of rustic charm and modern. The
+              barn
               house
               captivates with its
               blend of rustic
@@ -245,19 +247,21 @@
           </div>
         </div>
         <!--item 2-->
-        <div class="border-2 p-6 rounded-xl lg:col-span-4 h-custom lg:h-custom-lg flex justify-center bg-gray-50">
+        <div class="border-2 p-6 rounded-xl lg:col-span-4 h-custom lg:h-custom-lg flex justify-center bg-blue-50">
           <img src="./assets/img2.png" alt="Img 2" class="rounded-xl w-full">
         </div>
         <!--item 3-->
-        <div class="border-2 p-6 rounded-xl lg:col-span-3 h-custom lg:h-custom-lg flex justify-center bg-gray-50">
+        <div class="border-2 p-6 rounded-xl lg:col-span-3 h-custom lg:h-custom-lg flex justify-center bg-blue-50">
           <img src="./assets/img3.png" alt="Img 3" class="rounded-xl w-full">
         </div>
         <!--item 4-->
-        <div class="flex gap-4 p-6 border-2 rounded-xl md:col-span-2 lg:col-span-6 h-custom lg:h-custom-lg bg-gray-50">
-          <img src="./assets/img4.png" alt="Img 4" class="w-3/6">
+        <div
+          class="flex flex-col md:flex-row gap-4 p-6 border-2 rounded-xl md:col-span-2 lg:col-span-6 min-h-min overflow-hidden lg:h-custom-lg bg-blue-50">
+          <img src="./assets/img1.png" alt="Img 1" class="w-full h-[240px] md:h-auto md:w-3/6">
           <div class="flex flex-col gap-2 justify-center">
             <h2 class="text-2xl font-semibold">Commercial</h2>
-            <p class="text-lg leading-6">The barn house captivates with its blend of rustic charm and modern. The barn
+            <p class="text-lg leading-6 text-e">The barn house captivates with its blend of rustic charm and modern. The
+              barn
               house
               captivates with its
               blend of rustic
@@ -267,15 +271,60 @@
           </div>
         </div>
         <!--item 5-->
-        <div class="border-2 p-6 rounded-xl lg:col-span-3 h-custom lg:h-custom-lg flex justify-center bg-gray-50">
+        <div class="border-2 p-6 rounded-xl lg:col-span-3 h-custom lg:h-custom-lg flex justify-center bg-blue-50">
           <img src="./assets/img5.png" alt="Img 2" class="rounded-xl w-full">
         </div>
         <!--item 6 only for md-->
         <div
-          class="border-2 p-6 rounded-xl lg:col-span-3 h-custom lg:h-custom-lg hidden md:flex lg:hidden justify-center">
+          class="border-2 p-6 rounded-xl lg:col-span-3 h-custom lg:h-custom-lg hidden md:flex lg:hidden justify-center bg-blue-50">
           <img src="./assets/img3.png" alt="Img 6 md" class="rounded-xl w-full">
         </div>
       </div>
+    </section>
+
+    <!--Lets Contact section-->
+    <section class="py-20" style="background-image: url(./assets/bg.jpg);">
+      <div class="container mx-auto">
+        <!--heading text-->
+        <div class="">
+          <div class="flex flex-col items-center">
+            <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
+                class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> Let’s Connect</h5>
+            <h1 class="text-4xl lg:text-5xl font-semibold py-4">Let’s Discuss Next Project</h1>
+            <p class="font-medium text-lg leading-6 text-center">The barn house captivates with its blend of rustic
+              charm
+              and modern sophistication, featuring weathered wood, sleek
+              metal accents.</p>
+          </div>
+          <div></div>
+        </div>
+        <!--contact from-->
+        <div class="p-8 gap-6 grid items-center justify-center grid-cols-1 md:grid-cols-2">
+          <div>
+            <input type="text" placeholder="First Name*" class="input input-lg input-bordered w-full rounded-full" />
+          </div>
+
+          <div>
+            <input type="text" placeholder="Last Name*" class="input input-bordered w-full rounded-full input-lg" />
+          </div>
+          <div>
+            <input type="number" placeholder="Your Number*" class="input input-bordered w-full rounded-full input-lg" />
+          </div>
+          <div>
+            <input type="text" placeholder="Your Email*" class="input input-bordered w-full rounded-full input-lg" />
+          </div>
+
+          <div class="md:col-span-2 ">
+            <label class="form-control ">
+              <textarea class="textarea textarea-bordered h-24 rounded-3xl input-lg"
+                placeholder="Write details (Optional) "></textarea>
+            </label>
+          </div>
+        </div>
+      </div>
+
+
+
     </section>
   </main>
 </body>
