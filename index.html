@@ -35,29 +35,30 @@
   </script>
 </head>
 
-<body>
+<body class="relative">
   <!--Bismillahir Rahmanir Rahim-->
   <!--I code on Laptop-->
   <!--Header-->
-  <header class="container  mx-auto mb-12 ">
+  <header class="container  mx-auto mb-12" id="home">
     <!--navbar-->
     <nav>
       <div class="navbar bg-base-100">
         <div class="md:navbar-start flex md:inline-block flex-row-reverse justify-between md:justify-start  w-full">
           <div class="dropdown">
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 relative" fill="none" viewBox="0 0 24 24"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 relative" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
               </svg>
             </div>
             <ul tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow  absolute  top-4 right-0 md:left-0">
-              <li><a class="text-xl hover:font-semibold">Home</a></li>
-              <li><a class="text-xl hover:font-semibold">Service</a></li>
-              <li><a class="text-xl hover:font-semibold">Portfolio</a></li>
-              <li><a class="text-xl hover:font-semibold">Blogs</a></li>
-              <li><a class="text-xl hover:font-semibold">Contact Us</a></li>
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-32 p-2 shadow  absolute  top-12 right-0 md:left-0">
+              <li><a href="#home" class="text-xl hover:font-semibold">Home</a></li>
+              <li><a href="#service" class="text-xl hover:font-semibold">Service</a></li>
+              <li><a href="#portfolio" class="text-xl hover:font-semibold">Portfolio</a></li>
+              <li><a href="" class="text-xl hover:font-semibold">Blogs</a></li>
+              <li><a href="#contact" class="text-xl hover:font-semibold">Contact Us</d>
+              </li>
             </ul>
           </div>
           <a class="btn btn-ghost text-4xl"><i
@@ -65,18 +66,21 @@
         </div>
         <div class="navbar-center hidden lg:flex ">
           <ul class="menu menu-horizontal px-1">
-            <li><a class="text-xl hover:font-semibold">Home</a></li>
-            <li><a class="text-xl hover:font-semibold">Service</a></li>
-            <li><a class="text-xl hover:font-semibold">Portfolio</a></li>
-            <li><a class="text-xl hover:font-semibold">Blogs</a></li>
-            <li><a class="text-xl hover:font-semibold">Contact Us</a></li>
+            <li><a href="#home" class="text-xl hover:font-semibold">Home</a></li>
+            <li><a href="#service" class="text-xl hover:font-semibold">Service</a></li>
+            <li><a href="#portfolio" class="text-xl hover:font-semibold">Portfolio</a></li>
+            <li><a href="" class="text-xl hover:font-semibold">Blogs</a></li>
+            <li><a href="#contact" class="text-xl hover:font-semibold">Contact Us</>
+            </li>
           </ul>
         </div>
-        <div class="navbar-end hidden md:flex  space-x-2 min-w-max">
-          <p class="h-10 w-10 bg-slate-200 rounded-full flex justify-center items-center"><i
-              class="fa-solid fa-magnifying-glass text-xl"></i></p>
-          <p class="h-10 w-10 bg-slate-200 rounded-full flex justify-center items-center"><i
-              class="fa-solid fa-cart-shopping"></i></p>
+        <div class="navbar-end hidden md:flex flex-row space-x-2 min-w-max">
+          <div class="flex gap-2">
+            <p class="h-10 w-10 bg-slate-200 rounded-full flex justify-center items-center"><i
+                class="fa-solid fa-magnifying-glass text-xl"></i></p>
+            <p class="h-10 w-10 bg-slate-200 rounded-full flex  justify-center items-center"><i
+                class="fa-solid fa-cart-shopping"></i></p>
+          </div>
           <a class="btn rounded-full bg-green text-xl pr-2">Book
             Consult<i
               class="fa-solid fa-arrow-up-long text-3xl bg-black text-white h-10 w-10 rounded-full rotate-45"></i></a>
@@ -108,10 +112,10 @@
   <!--Main Section-->
   <main class="space-y-8 md:space-y-16 lg:space-y-20 mb-16 ">
     <!--We Design Section-->
-    <section class="bg-slate-200 py-8 lg:py-16 px-4 lg:px-0">
-      <div class="container mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12">
+    <section class="bg-slate-200 py-8 lg:py-16 px-4 lg:px-0" id="service">
+      <div class=" container mx-auto flex flex-col lg:flex-row justify-between items-center gap-8 lg:gap-12">
         <!--text content-->
-        <div class="space-y-4 lg:space-y-8 lg:w-3/6 relative h-full">
+        <div class="space-y-4 lg:space-y-8 lg:w-3/6 relative h-full text-center">
           <!--heading text-->
           <div class="space-y-4 flex flex-col items-center lg:items-start">
             <a class="btn rounded-full bg-white text-lg"><i
@@ -151,70 +155,70 @@
     </section>
 
     <!--Our Work Process-->
-    <section class="bg-slate-200 py-12 px-4 lg:px-0">
-      <div class="container mx-auto relative">
-        <!--Client Review-->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white p-8 gap-8 rounded-xl">
-          <div class="flex flex-col items-center space-y-2 ">
-            <p class="text-3xl"><i class="fa-solid fa-star"></i></p>
-            <h2 class="text-5xl font-bold">235+</h2>
-            <p class="text-xl">Happy Client Review</p>
+    <section class="bg-slate-200 py-12 px-4 lg:px-0" ">
+      <div class=" container mx-auto relative">
+      <!--Client Review-->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-white p-8 gap-8 rounded-xl">
+        <div class="flex flex-col items-center space-y-2 ">
+          <p class="text-3xl"><i class="fa-solid fa-star"></i></p>
+          <h2 class="text-5xl font-bold">235+</h2>
+          <p class="text-xl">Happy Client Review</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <p class="text-3xl"><i class="fa-solid fa-building"></i></p>
+          <h2 class="text-5xl font-bold">50+</h2>
+          <p class="text-xl">Work Departments</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <p class="text-3xl"><i class="fa-solid fa-users"></i></p>
+          <h2 class="text-5xl font-bold">30k+</h2>
+          <p class="text-xl">Our Happy Client</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+          <p class="text-3xl"><i class="fa-solid fa-users-line"></i></p>
+          <h2 class="text-5xl font-bold">307+</h2>
+          <p class="text-xl">Staff Members</p>
+        </div>
+      </div>
+      <!--Our Work Process-->
+      <div class="">
+        <div class="text-center py-16 space-y-4">
+          <h5 class="text-xl lg:text-xl bg-white hover:bg-green inline py-2 px-4 rounded-full"><i
+              class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> How we works</h5>
+          <h1 class="text-4xl lg:text-5xl font-semibold">Our Works Process</h1>
+          <p class="font-medium text-lg leading-6">The barn house captivates with its blend of rustic charm and modern
+            sophistication,
+            featuring weathered wood, sleek
+            metal accents.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-[#E7C1D3] p-6 md:p-8  rounded-xl">
+            <img src="./assets/concept.png" alt="concept" class="w-20">
+            <h3 class="text-3xl lg:text-4xl font-semibold py-2">Concept</h3>
+            <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
-          <div class="flex flex-col items-center space-y-2">
-            <p class="text-3xl"><i class="fa-solid fa-building"></i></p>
-            <h2 class="text-5xl font-bold">50+</h2>
-            <p class="text-xl">Work Departments</p>
+          <div class="bg-[#EFDA6E] p-6 md:p-8 rounded-xl">
+            <img src="./assets/flow-chart.png" alt="concept" class="w-20">
+            <h3 class="text-3xl lg:text-4xl font-semibold py-2">Design Process</h3>
+            <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
-          <div class="flex flex-col items-center space-y-2">
-            <p class="text-3xl"><i class="fa-solid fa-users"></i></p>
-            <h2 class="text-5xl font-bold">30k+</h2>
-            <p class="text-xl">Our Happy Client</p>
+          <div class="bg-[#A4DAC3] p-6 md:p-8 rounded-xl">
+            <img src="./assets/vision.png" alt="concept" class="w-20">
+            <h3 class="text-3xl lg:text-4xl font-semibold py-2">Supervision</h3>
+            <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
-          <div class="flex flex-col items-center space-y-2">
-            <p class="text-3xl"><i class="fa-solid fa-users-line"></i></p>
-            <h2 class="text-5xl font-bold">307+</h2>
-            <p class="text-xl">Staff Members</p>
+          <div class="bg-[#77AAEA] p-6 md:p-8 rounded-xl">
+            <img src="./assets/budget-planning.png" alt="concept" class="w-20">
+            <h3 class="text-3xl lg:text-4xl font-semibold py-2">Budget Planning</h3>
+            <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
         </div>
-        <!--Our Work Process-->
-        <div class="">
-          <div class="text-center py-16 space-y-4">
-            <h5 class="text-xl lg:text-xl bg-white hover:bg-green inline py-2 px-4 rounded-full"><i
-                class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> How we works</h5>
-            <h1 class="text-4xl lg:text-5xl font-semibold">Our Works Process</h1>
-            <p class="font-medium text-lg leading-6">The barn house captivates with its blend of rustic charm and modern
-              sophistication,
-              featuring weathered wood, sleek
-              metal accents.</p>
-          </div>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="bg-[#E7C1D3] p-6 md:p-8  rounded-xl">
-              <img src="./assets/concept.png" alt="concept" class="w-20">
-              <h3 class="text-3xl lg:text-4xl font-semibold py-2">Concept</h3>
-              <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
-            </div>
-            <div class="bg-[#EFDA6E] p-6 md:p-8 rounded-xl">
-              <img src="./assets/flow-chart.png" alt="concept" class="w-20">
-              <h3 class="text-3xl lg:text-4xl font-semibold py-2">Design Process</h3>
-              <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
-            </div>
-            <div class="bg-[#A4DAC3] p-6 md:p-8 rounded-xl">
-              <img src="./assets/vision.png" alt="concept" class="w-20">
-              <h3 class="text-3xl lg:text-4xl font-semibold py-2">Supervision</h3>
-              <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
-            </div>
-            <div class="bg-[#77AAEA] p-6 md:p-8 rounded-xl">
-              <img src="./assets/budget-planning.png" alt="concept" class="w-20">
-              <h3 class="text-3xl lg:text-4xl font-semibold py-2">Budget Planning</h3>
-              <p class="text-xl">The barn house captivates with its blend of rustic charm and modern.</p>
-            </div>
-          </div>
-        </div>
+      </div>
       </div>
     </section>
 
     <!--Latest Portfolio-->
-    <section class="container mx-auto space-y-8 lg:space-y-12 px-2 md:px-4 lg:px-0">
+    <section class="container mx-auto space-y-8 lg:space-y-12 px-2 md:px-4 lg:px-0" id="portfolio">
       <!--heading text-->
       <div class="flex flex-col items-center">
         <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
@@ -283,14 +287,222 @@
       </div>
     </section>
 
+    <!--Show My Idea section-->
+    <section class="bg-yellow-50 hidden">
+      <div class="container mx-auto">
+        <ul class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical">
+          <li>
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+              <time class="font-mono italic">2002</time>
+              <div class="text-lg font-black">First Macintosh computer</div>
+              The Apple Macintosh—later rebranded as the Macintosh 128K—is the original Apple Macintosh
+              personal computer. It played a pivotal role in establishing desktop publishing as a general
+              office function. The motherboard, a 9 in (23 cm) CRT monitor, and a floppy drive were housed
+              in a beige case with integrated carrying handle; it came with a keyboard and single-button
+              mouse.
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-end mb-10">
+              <time class="font-mono italic">1998</time>
+              <div class="text-lg font-black">iMac</div>
+              iMac is a family of all-in-one Mac desktop computers designed and built by Apple Inc. It has
+              been the primary part of Apple's consumer desktop offerings since its debut in August 1998,
+              and has evolved through seven distinct forms
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+              <time class="font-mono italic">2001</time>
+              <div class="text-lg font-black">iPod</div>
+              The iPod is a discontinued series of portable media players and multi-purpose mobile devices
+              designed and marketed by Apple Inc. The first version was released on October 23, 2001, about
+              8+1⁄2 months after the Macintosh version of iTunes was released. Apple sold an estimated 450
+              million iPod products as of 2022. Apple discontinued the iPod product line on May 10, 2022. At
+              over 20 years, the iPod brand is the oldest to be discontinued by Apple
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-end mb-10">
+              <time class="font-mono italic">2007</time>
+              <div class="text-lg font-black">iPhone</div>
+              iPhone is a line of smartphones produced by Apple Inc. that use Apple's own iOS mobile
+              operating system. The first-generation iPhone was announced by then-Apple CEO Steve Jobs on
+              January 9, 2007. Since then, Apple has annually released new iPhone models and iOS updates. As
+              of November 1, 2018, more than 2.2 billion iPhones had been sold. As of 2022, the iPhone
+              accounts for 15.6% of global smartphone market share
+            </div>
+            <hr />
+          </li>
+          <li>
+            <hr />
+            <div class="timeline-middle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+                <path fill-rule="evenodd"
+                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                  clip-rule="evenodd" />
+              </svg>
+            </div>
+            <div class="timeline-start mb-10 md:text-end">
+              <time class="font-mono italic">2015</time>
+              <div class="text-lg font-black">Apple Watch</div>
+              The Apple Watch is a line of smartwatches produced by Apple Inc. It incorporates fitness
+              tracking, health-oriented capabilities, and wireless telecommunication, and integrates with
+              iOS and other Apple products and services
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container mx-auto">
+      <div class="flex flex-col space-y-6 items-center px-4 md:px-2 border-4 w-full">
+        <!--heading text-->
+        <div class="flex flex-col  space-y-6 items-center">
+          <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
+              class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> Explore our Latest
+            Project</h5>
+          <h1 class="capitalize text-4xl lg:text-5xl font-semibold py-4">our latest Project</h1>
+          <p class="font-medium text-lg leading-6 text-center">The barn house captivates with its blend of rustic
+            charm
+            and modern
+            sophistication,
+            featuring
+            weathered wood,
+            sleek
+            metal accents.</p>
+
+          <div class=" ">
+            <ul class="flex flex-row gap-4 md:gap-8 lg:gap-12 flex-wrap justify-center">
+              <li class="uppercase text-xl font-semibold py-2 px-4 bg-green rounded-xl text-black hover:text-white">ALL
+              </li>
+              <li class="uppercase text-xl font-semibold py-2 px-4 bg-green rounded-xl text-black hover:text-white">
+                interior design
+              </li>
+              <li class="uppercase text-xl font-semibold py-2 px-4 bg-green rounded-xl text-black hover:text-white">
+                articeture
+              </li>
+
+              <li class="uppercase text-xl font-semibold py-2 px-4 bg-green rounded-xl text-black hover:text-white">
+                apartment
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--project items-->
+        <div class=" gap-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:px-8 lg:px-0  w-full">
+          <!--card 1-->
+          <div class=" bg-white hover:bg-cyan-500 rounded-xl shadow-xl max-w-fit mx-auto">
+            <img src="./assets/portfolio_01.jpg" alt="photo 1">
+            <div class="flex justify-between items-center">
+              <div class="pl-2">
+                <h2 class="text-2xl font-medium">Kichen water work</h2>
+                <p class="italic">Ongoing, Interior Design</p>
+              </div>
+              <p class="p-3"><i class="fa-regular fa-image p-3 bg-green"></i></p>
+            </div>
+          </div>
+          <!--card 2-->
+          <div class=" bg-white hover:bg-cyan-500 rounded-xl shadow-xl max-w-fit mx-auto">
+            <img src="./assets/portfolio_01.jpg" alt="photo 1">
+            <div class="flex justify-between items-center">
+              <div class="pl-2">
+                <h2 class="text-2xl font-medium">Kichen water work</h2>
+                <p class="italic">Ongoing, Interior Design</p>
+              </div>
+              <p class="p-3"><i class="fa-regular fa-image p-3 bg-green"></i></p>
+            </div>
+          </div>
+          <!--card 3-->
+          <div class=" bg-white hover:bg-cyan-500 rounded-xl shadow-xl max-w-fit mx-auto">
+            <img src="./assets/portfolio_01.jpg" alt="photo 1">
+            <div class="flex justify-between items-center">
+              <div class="pl-2">
+                <h2 class="text-2xl font-medium">Kichen water work</h2>
+                <p class="italic">Ongoing, Interior Design</p>
+              </div>
+              <p class="p-3"><i class="fa-regular fa-image p-3 bg-green"></i></p>
+            </div>
+          </div>
+          <!--card 4-->
+          <div class=" bg-white hover:bg-cyan-500 rounded-xl shadow-xl max-w-fit mx-auto">
+            <img src="./assets/portfolio_01.jpg" alt="photo 1">
+            <div class="flex justify-between items-center">
+              <div class="pl-2">
+                <h2 class="text-2xl font-medium">Kichen water work</h2>
+                <p class="italic">Ongoing, Interior Design</p>
+              </div>
+              <p class="p-3"><i class="fa-regular fa-image p-3 bg-green"></i></p>
+            </div>
+          </div>
+          <!--card 5-->
+          <div class=" bg-white hover:bg-cyan-500 rounded-xl shadow-xl max-w-fit mx-auto">
+            <img src="./assets/portfolio_01.jpg" alt="photo 1">
+            <div class="flex justify-between items-center">
+              <div class="pl-2">
+                <h2 class="text-2xl font-medium">Kichen water work</h2>
+                <p class="italic">Ongoing, Interior Design</p>
+              </div>
+              <p class="p-3"><i class="fa-regular fa-image p-3 bg-green"></i></p>
+            </div>
+          </div>
+          <!--card 6-->
+          <div class=" bg-white hover:bg-cyan-500 rounded-xl shadow-xl max-w-fit mx-auto ">
+            <img src="./assets/portfolio_01.jpg" alt="photo 1">
+            <div class="flex justify-between items-center">
+              <div class="pl-2">
+                <h2 class="text-2xl font-medium">Kichen water work</h2>
+                <p class="italic">Ongoing, Interior Design</p>
+              </div>
+              <p class="p-3"><i class="fa-regular fa-image p-3 bg-green"></i></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--Lets Contact section-->
-    <section class="py-20" style="background-image: url(./assets/bg.jpg);">
+    <section class="py-12" style="background-image: url(./assets/bg.jpg);" id="contact">
       <div class="container mx-auto px-4 md:px-2">
         <!--heading text-->
         <div class="flex flex-col items-center justify-center">
-          <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full"><i
+          <h5 class="text-xl lg:text-xl bg-gray-100 hover:bg-green inline py-2 px-4 rounded-full "><i
               class="fa-solid fa-arrow-up-long text-xl text-black  rounded-full rotate-90 "></i> Let’s Connect</h5>
-          <h1 class="text-4xl lg:text-5xl font-semibold py-4">Let’s Discuss Next Project</h1>
+          <h1 class="text-4xl lg:text-5xl font-semibold py-4 text-center">Let’s Discuss Next Project</h1>
           <p class="font-medium text-lg leading-6 text-center">The barn house captivates with its blend of rustic
             charm
             and modern sophistication, featuring weathered wood, sleek
